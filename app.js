@@ -1,7 +1,9 @@
 const http = require("http");
 
-const route = require("./route");
+const express = require("express");
 
-const server =  http.createServer(route.requestListener);
+const app = express();
+
+const server =  http.createServer(app);
 
 server.listen(3000);
